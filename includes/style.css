@@ -1,0 +1,142 @@
+html {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+            -webkit-box-sizing: inherit;
+            -moz-box-sizing: inherit;
+        }
+        
+        body {
+            padding-top: 5em;
+            font-family: sans-serif;
+            background-color: #F9F8F4;
+            font-weight: 100;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-weight: 100;
+            text-transform: uppercase;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+            margin: 0;
+        }
+        
+        h1:hover {
+            font-style: italic;
+        }
+        
+        h2 {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: 100;
+            text-transform: uppercase;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+        }
+        
+        h2:hover {
+            font-style: italic;
+        }
+        #artist{
+            margin-bottom: 15em;
+        }
+        
+        .line {
+            display: inline-block;
+            background-color: #1c1c24;
+            color: white;
+            padding: .3em;
+            padding-left: 1em;
+            padding-right: 1em;
+            margin-bottom: .75em;
+        }
+        
+        .paragraph {
+            font-size: .95em;
+            line-height: 1.5em;
+            text-transform: uppercase;
+            margin-bottom: 2em;
+            margin-top: 3em;
+        }
+        
+        #words {
+            width: 55%;
+            margin-top: 7.5em;
+            margin-left: 22.5%;
+            padding-left: 1em;
+            padding-right: 5em;
+            padding-right: 5em;
+            padding-bottom: 50em;
+        }
+        
+        #top {
+            width: 60%;
+            margin-left: 20%;
+            margin-right: 20%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -100;
+        }
+        
+        #bottom {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 60%;
+            margin-left: 20%;
+            z-index: 100;
+        }
+        
+
+        @media (max-width:800px) {
+            #top {
+                width: 100%;
+                margin-left: 0;
+                min-width: 500px;
+            }
+            #bottom {
+                width: 100%;
+                margin-left: 0;
+                min-width: 500px;
+            }
+            #words {
+                margin-left: 1em;
+                width: 95%;
+                float: left;
+                
+            }
+        }
+
+        
+        @media 
+            /*only screen and (-webkit-min-device-pixel-ratio: 2),*/
+            only screen and ( -webkit-min-device-pixel-ratio: 2.75),
+            only screen and ( min-resolution: 264dpi),
+            only screen and ( -webkit-min-device-pixel-ratio: 2),
+            only screen and ( min-resolution: 2dppx) {
+                #top {
+                    width: 100%;
+                    margin: 0;
+                }
+                #bottom {
+                    width: 100%;
+                    margin: 0;
+                }
+                #words {
+                    margin-left: 1em;
+                    width: 95%;
+                    float: left;
+                }
+        }
