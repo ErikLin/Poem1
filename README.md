@@ -2,4 +2,4 @@
 
 **Assignment:** Typeset a poem
 
-**[Live Page](eriklin.github.io/Poem1/)**
+**[Live Page](http://eriklin.github.io/Poem1/)**
